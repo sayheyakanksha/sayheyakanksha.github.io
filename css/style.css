@@ -1,11 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+
+:root {
+  --primary-color: #2b2c2b;
+  --primary-color-light: white;
+  --button-box-shadow: rgba(0, 0, 0, 0.56) 0px 4px 14px 4px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Body */
 
 body {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  color: rgb(64, 68, 93);
-  background: rgb(239,238,236);
-  font-weight:400;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  color: #2b2c2b;
+  background: rgb(249, 249, 249);
+  -webkit-text-size-adjust: none;
+  font-size: 16pt;
+  font-weight: 400;
+  /* line-height: 1.75em; */
 }
 
 a {
@@ -19,7 +33,7 @@ a {
 }
 
 a:hover {
-  color: #000;
+  color: #565add;
 }
 
 h1,
@@ -29,14 +43,86 @@ h4,
 h5,
 h6,
 .font-heading {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+  color: #2b2c2b;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1em;
+  /* margin: 0 0 1em 0; */
+  margin: 0;
 }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+h4 {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+h5 {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+h6 {
+  font-size: 0.7em;
+  /* line-height: 1.5em; */
+}
+
+p {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.project-details p{
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.project-details li{
+  font-size: 0.8em;
+  margin: 0;
+}
+
 
 .site-section {
-  padding: 7rem 0;
+  padding: 3rem 0;
 }
 
+.byline{
+  color: #aaaaaa;
+}
+
+.portfolio-byline{
+  color: #aaaaaa;
+  font-size: 0.8em;
+}
+
+.banner-side-text{
+  font-size: 0.8em;
+}
 .filters a {
   color: rgb(64, 68, 93);
   display: inline-block;
@@ -104,6 +190,8 @@ h6,
   transition: .3s transform ease;
   -webkit-transform: scale(1);
   transform: scale(1);
+  /* max-width: 490px;
+  max-width: 490px; */
 }
 
 .item .item-wrap > .work-info {
@@ -120,15 +208,17 @@ h6,
 }
 
 .item .item-wrap > .work-info span {
-  font-size: 0.8em;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  text-decoration: none;
+  color: rgb(64, 68, 93);
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
 }
 
 .project-item{
-  font-size: 0.8em;
+  font-size: 0.6em;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2em;
   margin: 5px 0;
 }
 
@@ -288,18 +378,23 @@ h6,
 
 .custom-navbar .navbar-brand {
   color: rgb(64, 68, 93);
-  font-size: 0.8em;
+  font-size: 0.6em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
 
+.custom-navbar .navbar-brand:hover {
+  color: #565add;
+}
+
 /* Footer */
 .footer {
+  background-color: rgb(64, 68, 93);
   padding: 0 0 4rem 0;
 }
 
 .footer a {
-  color: #000;
+  color: #fff;
 }
 
 .social a {
@@ -309,7 +404,7 @@ h6,
   height: 50px;
   position: relative;
   text-align: center;
-  color: rgb(40,44,66);
+  color: #fff
 }
 
 .social a span {
@@ -328,13 +423,13 @@ h6,
 p#no-last-name {
   font-size: 0.8em;
   display: block;
-  color: rgb(64,68,93);
+  color: #fff;
 }
 
 .akanksha-credits {
   font-size: 1em;
   display: block;
-  color: rgb(64,68,93);
+  color: #fff;
 }
 
 @media (max-width: 780px) {
@@ -369,13 +464,17 @@ header {
 .nav-links a {
   text-decoration: none;
   color: rgb(64, 68, 93);
-  font-size: 0.8em;
+  font-size: 0.6em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
 
-/* Fonts */
+.nav-links a:hover {
+  color: #565add;
+}
 
+/* Fonts */
+/* 
 .h3 {
   font-size: 20px;
 }
@@ -392,13 +491,12 @@ p {
   font-size: 1.2em;
   font-size-adjust: 0.508;
   margin: 0;
-  /* padding: 0 0 1.5em 0; */
   font-weight: 400;
   font-style: normal;
   line-height: 140%;
-}
+} */
 
-h1{
+/* h1{
   font-size: 2.0em;
   line-height: 2rem;
   margin-top: 0;
@@ -410,15 +508,14 @@ h2{
   line-height: 140%;
   margin-top: 0;
   font-weight: 700;
-}
+} */
 .asterisk {
-  
+/*   
   display: inline-block;
-  margin-left: 5px; /* Adjust spacing */
-  font-size: 1em; /* Adjust size relative to your name */
-  animation: rotate 2s linear infinite; /* Continuous rotation */
-  transform-origin: center center; /* Rotate around its own center */
-  
+  margin-left: 5px;
+  font-size: 1em; 
+  animation: spin 2s linear infinite;
+   */
 }
 
 .asterisk a {
@@ -427,18 +524,13 @@ h2{
 }
 
 .asterisk a:hover {
-  text-decoration: none; /* Ensures no underline on hover */
+  text-decoration: none !important; /* Ensures no underline on hover */
 }
 
-
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 .custom-border{
-  border: 0.5px solid rgb(212,212,218);
-  margin: 10px 0;
+  border: 0.5px solid #efeeee;
+  margin: 1em 0;
 }
 
 #backToTopBtn {
@@ -482,4 +574,16 @@ h2{
   height: 1px; /* Line thickness */
   background-color: rgb(212,212,218); /* Line color */
   transform: translateY(-50%);
+}
+
+.highlight{
+  color: #565add;
+}
+
+.selected-works{
+  text-decoration: none;
+  color: rgb(64, 68, 93);
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
