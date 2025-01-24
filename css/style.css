@@ -103,7 +103,7 @@ p {
 
 .project-details li{
   font-size: 0.8em;
-  margin: 0;
+  margin: 0.8em 0;
 }
 
 
@@ -123,6 +123,18 @@ p {
 .banner-side-text{
   font-size: 0.8em;
 }
+
+.fancy-numbers{
+  font-size: 2.0em;
+  text-shadow: 2px 3px 0 #ECE941; /*text-shadow: horizontal-offset vertical-offset blur color;*/
+  color: #565add;
+}
+
+.fancy-numbers-byline{
+  font-size: 1.0em;
+}
+
+
 .filters a {
   color: rgb(64, 68, 93);
   display: inline-block;
@@ -164,6 +176,7 @@ p {
 .item {
   border: none;
   margin-bottom: 30px;
+  
 }
 
 .item .item-wrap {
@@ -190,8 +203,7 @@ p {
   transition: .3s transform ease;
   -webkit-transform: scale(1);
   transform: scale(1);
-  /* max-width: 490px;
-  max-width: 490px; */
+  max-width: 97%;
 }
 
 .item .item-wrap > .work-info {
