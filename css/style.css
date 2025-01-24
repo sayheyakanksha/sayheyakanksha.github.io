@@ -141,6 +141,7 @@ p {
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
+  font-size: 0.6em;
 }
 
 .filters a:hover,
