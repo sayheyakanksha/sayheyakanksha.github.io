@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic"); */
 
 :root {
   --primary-color: #2b2c2b;
@@ -13,12 +13,12 @@ html {
 /* Body */
 
 body {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Elza", Helvetica, sans-serif;
   color: #2b2c2b;
   background: rgb(249, 249, 249);
   -webkit-text-size-adjust: none;
   font-size: 16pt;
-  font-weight: 400;
+  font-weight: 300;
   /* line-height: 1.75em; */
 }
 
@@ -67,9 +67,9 @@ h5,
 h6,
 .font-heading {
   color: #2b2c2b;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Elza", Helvetica, sans-serif;
   font-weight: 400;
-  line-height: 1em;
+  /* line-height: 1em; */
   /* margin: 0 0 1em 0; */
   margin: 0;
 }
@@ -85,8 +85,8 @@ h6 a {
 }
 
 h1 {
-  font-size: 2em;
-  line-height: 1.5em;
+  font-size: 1.9em;
+  line-height: 1.6em;
 }
 
 h2 {
@@ -127,6 +127,7 @@ p {
 
 .project-details li {
   font-size: 0.9em;
+  line-height: 2em;
   margin: 0.8em 0;
 }
 
@@ -180,7 +181,7 @@ p {
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
-  font-size: 0.6em;
+  font-size: 0.55em;
 }
 
 .filters a:hover,
@@ -301,12 +302,13 @@ p {
   display: inline-block;
   border: 1px solid rgb(64, 68, 93);
   padding: 10px 15px;
-  font-size: 0.8em;
+  font-size: 0.7em;
   text-transform: uppercase;
   color: rgb(64, 68, 93);
   transition: 0.2s all ease;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: 0.2em;
+  line-weight: 0 !important;
 }
 
 .readmore:active,
@@ -429,9 +431,10 @@ p {
 
 .custom-navbar .navbar-brand {
   color: rgb(64, 68, 93);
-  font-size: 0.6em;
+  font-size: 0.55em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  font-weight: 500;
 }
 
 .custom-navbar .navbar-brand:hover {
@@ -515,7 +518,7 @@ header {
 .nav-links a {
   text-decoration: none;
   color: rgb(64, 68, 93);
-  font-size: 0.6em;
+  font-size: 0.55em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -633,7 +636,26 @@ h2{
 .selected-works {
   text-decoration: none;
   color: rgb(64, 68, 93);
-  font-size: 0.6em;
+  font-size: 0.55em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.bd-callout-warning {
+  border-left-color: #f0ad4e;
+}
+
+.bd-callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #f0ad4e;
+  border-left-width: .25rem;
+  border-radius: .25rem;
+  /* box-shadow: 2px 2px #888888;
+  background-color: #f0ad4e; */
+}
+
+.problem{
+  color: #565add;
 }
