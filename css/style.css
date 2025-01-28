@@ -121,13 +121,14 @@ p {
 
 .project-details p {
   font-size: 0.9em;
-  line-height: 2em;
+  /* line-height: 2em; */
   margin: 0;
+  color: rgb(64, 68, 93);
 }
 
 .project-details li {
   font-size: 0.9em;
-  line-height: 2em;
+  /* line-height: 2em; */
   margin: 0.8em 0;
 }
 
@@ -145,7 +146,7 @@ p {
 }
 
 .banner-side-text {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .fancy-numbers {
@@ -164,6 +165,11 @@ p {
 
 .fancy-numbers-byline {
   font-size: 1em;
+}
+
+.box-text{
+  font-weight: 400;
+  color: #565add;
 }
 
 .product-toolkit{
@@ -268,10 +274,11 @@ p {
 }
 
 .project-item {
-  font-size: 0.6em;
+  font-size: 0.55em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin: 5px 0;
+  text-align: center;
 }
 
 .item h3 {
@@ -318,6 +325,31 @@ p {
 }
 
 .readmore:hover {
+  color: #fff;
+  text-decoration: none;
+  background: rgb(64, 68, 93);
+}
+
+.readmore-alt {
+  display: inline-block;
+  border: 1px solid rgb(64, 68, 93);
+  padding: 10px 15px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: rgb(64, 68, 93);
+  transition: 0.2s all ease;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  line-weight: 0 !important;
+}
+
+.readmore-alt:active,
+.readmore-alt:focus,
+.readmore-alt:hover {
+  outline: none;
+}
+
+.readmore-alt:hover {
   color: #fff;
   text-decoration: none;
   background: rgb(64, 68, 93);
@@ -434,7 +466,7 @@ p {
   font-size: 0.55em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .custom-navbar .navbar-brand:hover {
@@ -658,4 +690,13 @@ h2{
 
 .problem{
   color: #565add;
+}
+
+.pt-10,
+.py-10 {
+  padding-top: 10rem !important;
+}
+
+.pb-10{
+  padding-bottom: 10rem !important;
 }
