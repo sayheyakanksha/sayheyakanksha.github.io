@@ -99,136 +99,345 @@
             <!-- Project Header -->
             <div class="row gx-5 mb-5">
               <div class="col-12 col-lg-6">
-                <div class="h3 turnh2">A visual data guide to the Lands Between using Tableau.
+                <div class="h3 turnh2 mb-4 mb-lg-0 mt-4 mt-lg-0">A visual data guide to the Lands Between using Tableau.
                 </div>
               </div>
               <div class="col-12 col-lg-6">
                 <div class="projecttext">
-                  This project explores data from Elden Ring, an open-world action RPG by FromSoftware known for its
-                  rich lore and deep
-                  mechanics and it uses data-driven visualizations to help players navigate the game’s complexity and
-                  make more informed
-                  choices based on their playstyle.
+                  For my final project in a Data Visualization course, I chose to explore Elden Ring — an open-world
+                  action RPG known for
+                  its deep mechanics and massive world. As a fan of the game, I wanted to use data to make its
+                  complexity easier to
+                  understand.
                 </div>
-                <div class="projecttext">
-                  This was my final project for a Data Visualization course using Tableau — and as a big Elden Ring fan,
-                  I knew I wanted
-                  to dive into its rich, layered world. The game is packed with complex systems, from armor stats to
-                  boss locations, and I
-                  used this project to explore how Tableau’s advanced tools could make that complexity more navigable.
+                <div class="projecttext mt-2">
+                  Using Tableau, I created interactive visualizations to help players explore things like armor stats,
+                  boss locations, and
+                  item scaling.
                 </div>
-                <div class="projecttext">
-                  I focused on building interactive visualizations that help players (and curious designers) understand
-                  the game’s inner
-                  workings — like how items scale, where key challenges lie, and what makes each playstyle unique.
+                <div class="projecttext mt-2">
+                  The goal was to turn dense game systems into clear, useful insights that match different playstyles —
+                  whether you're a
+                  new player or just curious about how the game works.
                 </div>
               </div>
             </div>
             <!-- /Project Header -->
 
+
+
             <div class="row mt-4">
               <div class="col-auto project-img">
-                <video class="project-img" width="100%" autoplay muted loop>
-                  <source src="assets/img/eldenring/eldenring-tableau-vid.mp4" type="video/mp4">
-                </video>
+                <div style="background-color: #000;" class="project-img p-2 p-lg-4">
+                  <video class="project-img" width="100%" autoplay muted loop playsinline>
+                    <source src="assets/img/eldenring/eldenring-tableau-vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
               </div>
             </div>
 
-            <!-- Block -->
-            <div class="row gx-5 mt-5 mb-2">
-              <div class="col-12 col-lg-6">
-                <div class="h3 turnh4">The dashboard is organized into thematic sections that guide users through Elden
-                  Ring’s complexity using interactive
+            <div class="row w-lg-75 w-100 mt-5 mb-4">
+              <div class="col-12">
+                <div class="project-label">it's all about elden ring</div>
+              </div>
+              <div class="col">
+                <div class="h4">To ensure full coverage of Elden Ring and its 2024 expansion, I used a combination of
+                  these datasets on Tableau:
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="row gx-5 mt-4 mb-5" data-aos="fade-up">
+              <div class="col-sm-4 mt-2 projecttext">
+                <span class="box-text highlight">Base Game Dataset</span>
+                <div class="projecttext mt-2 mb-4">I used a <a class="project-link"
+                    href="https://www.kaggle.com/datasets/robikscube/elden-ring-ultimate-dataset"
+                    target="_blank">Kaggle</a> dataset with 15+ CSV
+                  files which had gameplay data on
+                  weapons, bosses,
+                  NPCs, locations, and more. The data came from an
+                  unofficial open-source Elden Ring API.
+                </div>
+              </div>
+              <div class="col-sm-4 mt-2 projecttext">
+                <span class="box-text highlight">Shadow of the Erdtree DLC Dataset</span>
+                <div class="projecttext mt-2 mb-4">I added a second Kaggle dataset covering
+                  new bosses, items, and map regions from the Shadow
+                  of the Erdtree expansion. It was sourced from the Fextralife Wiki and updated on <a
+                    class="project-link"
+                    href="https://www.kaggle.com/datasets/pedroaltobelli/ultimate-elden-ring-with-shadow-of-the-erdtree-dlc"
+                    target="_blank">Kaggle</a>.</div>
+              </div>
+              <div class="col-sm-4 mt-2 projecttext">
+                <span class="box-text highlight">Awards & Recognition</span>
+                <div class="projecttext mt-2 mb-4">I scraped award data from <a class="project-link"
+                    href="https://en.wikipedia.org/wiki/Elden_Ring" target="_blank">Wikipedia</a> to show how Elden Ring
+                  performed
+                  at major game award shows and highlight its wins and nominations in different categories.</div>
+              </div>
+              <div class="col-sm-4 mt-2 projecttext">
+                <span class="box-text highlight">Metacritic Score Comparison</span>
+                <div class="projecttext mt-2 mb-4">I scraped data directly from <a class="project-link"
+                    href="https://www.metacritic.com/browse/game/ps5/" target="_blank">Metacritic</a> to compare Elden
+                  Ring's
+                  rating with other top PlayStation and Xbox titles,
+                  showing its lasting critical acclaim.
+                </div>
+              </div>
+
+              <div class="col-sm-4 mt-2 projecttext">
+                <span class="box-text highlight">Sales Performance</span>
+                <div class="projecttext mt-2 mb-4">To show how the game's popularity grew, I used data from <a
+                    class="project-link" href="https://www.statista.com/statistics/1300663/elden-ring-sales-worldwide/"
+                    target="_blank">Statista</a>
+                  to
+                  visualize Elden Ring's
+                  sales over time—including its recent 30 million units sold milestone.</div>
+              </div>
+              <div class="col-sm-4 mt-2 projecttext">
+                <span class="box-text highlight">Boss Map Visualization</span>
+                <div class="projecttext mt-2 mb-4">I manually mapped boss locations using <a class="project-link"
+                    href="https://eldenring.wiki.fextralife.com/Bosses" target="_blank">FextaLife's boss data</a> and a
+                  clean,
+                  label-free Elden Ring map to visualize their distribution across the game world—including new DLC
+                  regions.
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-6">
+                <img src="assets/img/eldenring/elden-ring-poster-1.png" alt=" Image" class="img-fluid project-img">
+              </div>
+              <div class="col-6">
+                <img src="assets/img/eldenring/elden-ring-poster-2.png" alt=" Image" class="img-fluid project-img">
+              </div>
+            </div>
+
+            <div class="row w-lg-75 w-100 mt-5 mb-5">
+              <div class="col">
+                <div class="h4">The dashboard is organized into thematic sections that guide users through Elden Ring's
+                  complexity using interactive
                   visualizations.</div>
               </div>
-
-              <div class="col-12 col-lg-6">
-                <!-- 4 Grid -->
-                <div class="row gx-5" data-aos="fade-up">
-                  <div class="col-sm-6 blocktext">
-                    <span class="box-text highlight">Environment and Materials</span>
-                    <p class="mt-2 mb-4">I used a mix of custom materials, assets and lighting effects to give the
-                      kitchen a
-                      mysterious, otherworldly feel.</p>
-                  </div>
-                  <div class="col-sm-6 blocktext">
-                    <span class="box-text highlight">Animations</span>
-                    <p class="mt-2 mb-4">Environmental and kitchen animations are added, such as chopping vegetables,
-                      flying
-                      bats for a more realistic vibe.</p>
-                  </div>
-                </div>
-                <!-- /4 Grid -->
-              </div>
             </div>
-            <!-- /Block -->
+
+            <!-- Datastory 1 -->
+            <div class="row mt-5 gx-5 mb-5">
+              <div class="col-12">
+                <div class="project-label">overview & Rankings</div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="h4">How Elden Ring stacks up across platforms and award shows.
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="projecttext mt-2 mt-lg-0">This page shows Metacritic scores for games with filters for
+                  PlayStation and Xbox platforms. It also compares Elden Ring's
+                  awards versus nominations across game categories, with filters for years and versions (base game and
+                  DLC). There's a line chart as well showing Elden Ring's sales milestones over time.
+                </div>
+                <div class="projecttext mt-2">Interactive filters and color highlights make the dashboard easy to
+                  explore, and users can hover over charts to see
+                  more details as well.
+                </div>
+
+              </div>
+            </div> <!-- /Datastory 1  -->
+
 
             <div class="row mt-4">
               <div class="col-auto">
-                <img src="assets/img/eldenring/datastory-1.jpg" alt=" Image" class="img-fluid project-img">
+                <img src="assets/img/eldenring/datastory-1-overview.png" alt=" Image" class="img-fluid project-img">
               </div>
             </div>
 
-            <!-- Block -->
-            <div class="row gx-5 mt-5 mb-2">
-              <div class="col-12 col-lg-6">
-                <div class="h3 turnh4">The dashboard is organized into thematic sections that guide users through Elden
-                  Ring’s complexity using interactive
-                  visualizations.</div>
+            <!-- Datastory 2 -->
+            <div class="row mt-5 gx-5 mb-5">
+              <div class="col-12">
+                <div class="project-label">Character classes</div>
               </div>
-
               <div class="col-12 col-lg-6">
-                <!-- 4 Grid -->
-                <div class="row gx-5" data-aos="fade-up">
-                  <div class="col-sm-6 blocktext">
-                    <span class="box-text highlight">Environment and Materials</span>
-                    <p class="mt-2 mb-4">I used a mix of custom materials, assets and lighting effects to give the
-                      kitchen a
-                      mysterious, otherworldly feel.</p>
-                  </div>
-                  <div class="col-sm-6 blocktext">
-                    <span class="box-text highlight">Player Input and Camera</span>
-                    <p class="mt-2 mb-4">The player controls the ghost chef through new input system and camera uses
-                      Cinemachine to follow it around.</p>
-                  </div>
-                  <div class="col-sm-6 blocktext">
-                    <span class="box-text highlight">Interactions and Triggers</span>
-                    <p class="mt-2 mb-4">Players interact with ingredients and kitchen objects to make recipes in the
-                      dungeon kitchen.</p>
-                  </div>
-                  <div class="col-sm-6 blocktext">
-                    <span class="box-text highlight">Animations</span>
-                    <p class="mt-2 mb-4">Environmental and kitchen animations are added, such as chopping vegetables,
-                      flying
-                      bats for a more realistic vibe.</p>
-                  </div>
+                <div class="h4">Learning about starting player character classes in Elden Ring.
                 </div>
-                <!-- /4 Grid -->
               </div>
-            </div>
-            <!-- /Block -->
+              <div class="col-12 col-lg-6">
+                <div class="projecttext mt-2 mt-lg-0">Elden Ring starts players off with 10 different character classes,
+                  each with unique stat distributions that shape
+                  playstyle, combat, and progression.
+                </div>
+                <div class="projecttext mt-2">I created visualizations that let users compare classes using table
+                  charts, spider charts, and multi-select filters to
+                  explore different stats side-by-side.
+                </div>
+
+              </div>
+            </div> <!-- /Datastory 2  -->
 
             <div class="row mt-4">
               <div class="col-auto">
-                <img src="assets/img/eldenring/datastory-2.jpg" alt=" Image" class="img-fluid project-img">
+                <img src="assets/img/eldenring/datastory-2-classes.png" alt=" Image" class="img-fluid project-img">
               </div>
             </div>
+
+            <!-- Datastory 3 -->
+            <div class="row mt-5 gx-5 mb-5">
+              <div class="col-12">
+                <div class="project-label">The lands between</div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="h4">Where are the Elden Ring bosses? Exploring density across the lands between.
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="projecttext mt-2 mt-lg-0">I created custom maps showing boss density across Elden Ring's
+                  world using circle markers—larger circles mean more
+                  bosses in that area. A filter lets players switch between the base game map and the DLC map for easy
+                  comparison.
+                </div>
+                <div class="projecttext mt-2">This feature helps users decide where to go and plan their exploration
+                  based on boss density, so they can choose areas
+                  that match their preferred challenge level.
+                </div>
+
+              </div>
+            </div> <!-- /Datastory 3 -->
+
+            <div class="row mt-4">
+              <div class="col-auto">
+                <img src="assets/img/eldenring/datastory-3-map.png" alt=" Image" class="img-fluid project-img">
+              </div>
+            </div>
+
+            <!-- Datastory 4 -->
+            <div class="row mt-5 gx-5 mb-5">
+              <div class="col-12">
+                <div class="project-label">Weapons overview</div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="h4">Exploring the balance between weapon power, weight, and upgrades for better gameplay
+                  choices.
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="projecttext mt-2 mt-lg-0">Elden Ring features over 300 weapons, each with multiple upgrade
+                  types (Heavy, Keen, Occult, etc.) and levels, making
+                  direct comparison complex. To simplify, I grouped all upgrade levels by weapon type, focusing on their
+                  overall potential
+                  without clutter from upgrade increments.
+                </div>
+                <div class="projecttext mt-2">This page features scatter plots comparing weapon damage versus
+                  defense, with circle size indicating weight, plus
+                  filters for upgrade type and damage category to help users explore weapon trade-offs.
+                </div>
+
+                <div class="projecttext mt-2">It also has a split bar chart to show stat requirements per weapon across
+                  different categories.
+                </div>
+
+
+
+
+              </div>
+            </div> <!-- /Datastory 4  -->
+
+            <div class="row mt-4">
+              <div class="col-auto">
+                <img src="assets/img/eldenring/datastory-4-weapons.png" alt=" Image" class="img-fluid project-img">
+              </div>
+            </div>
+
+            <!-- Datastory 5 -->
+            <div class="row mt-5 gx-5 mb-5">
+              <div class="col-12">
+                <div class="project-label">Armor & Ammo</div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="h4">A closer look at armor and ammo strengths for optimized builds.
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="projecttext mt-2 mt-lg-0">This page lets users compare armor and ammo items based on
+                  core stats like attack power for ammo and damage
+                  resistance for armor. Each bubble represents an item, sized by its main stat, making it easy to spot
+                  powerful gear.
+                </div>
+                <div class="projecttext mt-2">Filters allow users to switch between ammo and armor views, while detailed
+                  stat breakdowns appear alongside to help
+                  quickly evaluate item strengths.
+                </div>
+
+              </div>
+            </div> <!-- /Datastory 5 -->
+
+            <div class="row mt-4">
+              <div class="col-auto">
+                <img src="assets/img/eldenring/datastory-5-armonsandammos.png" alt=" Image"
+                  class="img-fluid project-img">
+              </div>
+            </div>
+
+            <!-- Datastory 6 -->
+            <div class="row mt-5 gx-5 mb-5">
+              <div class="col-12">
+                <div class="project-label">Magic Spells</div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="h4">Comparing Elden Ring's sorceries and incantations to guide caster builds.
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="projecttext mt-2 mt-lg-0">Elden Ring features two main categories of magic: Sorceries and
+                  Incantations, each with distinct roles and mechanics.
+                </div>
+                <div class="projecttext mt-2">I have added visualizations that help players compare their utility roles
+                  and attribute requirements to
+                  better decide which magic path fits their
+                  preferred playstyle, optimizing their character build from early stages onward.
+                </div>
+
+              </div>
+            </div> <!-- /Datastory 6  -->
+
+            <div class="row mt-4">
+              <div class="col-auto">
+                <img src="assets/img/eldenring/datastory-6-spells.png" alt=" Image" class="img-fluid project-img">
+              </div>
+            </div>
+
 
 
 
             <div class="row w-lg-75 w-100 mt-5 mb-4">
+              <div class="col-12">
+                <div class="project-label">What I learned</div>
+              </div>
               <div class="col">
-                <div class="h3 turnh4">The design system extended naturally across all marketing collaterals, creating a
-                  cohesive brand experience at every
-                  touchpoint.</div>
+                <div class="h4">This was a really fun project to work on. I genuinely enjoyed exploring the data behind
+                  one of my favorite games—Elden
+                  Ring, which I've easily spent over 200 hours playing.
+                  <br />
+                  <br />
+
+                  Originally, I planned to include a lot more in-game data but I had to scale back because of how messy
+                  that data was. In a way, it was a good reminder of something one of my favorite Elden Ring bosses once
+                  said:
+
+                </div>
               </div>
             </div>
-            <div class="row w-lg-75 w-100 mt-2 mb-4">
+            <div class="row w-lg-75 w-100 mt-2 mb-5">
               <div class="col">
-                <div class="h3 turnh4"><em>"Put these foolish ambitions to rest, foul Tarnished!"
+                <div class="h4">
+
+                  <em>"Put these foolish ambitions to rest, foul Tarnished!"
                     <br />
                     <span class="margit">— Margit, the Fell Omen, Elden Ring</span>
-                  </em></div>
+                  </em>
+                </div>
               </div>
             </div>
 
@@ -250,7 +459,7 @@
         <h4>Still here? Let's make something cool.</h4>
         <p>I'm into design, games, systems, and all the little quirks in between. If that sounds like your vibe too, hit
           me up —
-          I’d love to hear from you.</p>
+          I'd love to hear from you.</p>
 
         <div class="social-links d-flex justify-content-center">
           <a href="https://www.linkedin.com/in/sayheyakanksha/" target="_blank"><i class="bi bi-linkedin"></i></a>

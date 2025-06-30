@@ -14,13 +14,24 @@
   --accent-color: #000000; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+
+
+  /* New colors */
+  --periwinkle: #8290f5;
+  --black: #000;
+  --white: #fff;
+  --grey: #646464;
+  /* --bg: whitesmoke; */
+  --light-grey: #9d9d9d;
+  --dark-grey: #333;
+
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #5b5b5b;  /* The default color of the main navmenu links */
   --nav-hover-color: #000000; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #f5f5f5; /* Used as the background color for mobile navigation menu */
+  --nav-mobile-background-color: #000; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #5b5b5b; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #000000; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
@@ -107,8 +118,9 @@ h6 {
 }
 
 .header:hover{
-  opacity: 0.6;
+  /* opacity: 0.6; */
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -238,7 +250,7 @@ h6 {
   right: 310px;
   background-color: var(--surface-color);
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .mobile-nav-active .navmenu {
@@ -250,7 +262,6 @@ h6 {
   background-color: var(--nav-mobile-background-color);
   transition: 0.3s;
 }
-
 
 @media (min-width: 992px) {
   .mobile-nav-toggle {
@@ -312,7 +323,7 @@ h6 {
 
 .footer .copyright p {
   margin-bottom: 0;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .footer .social-links {
@@ -350,6 +361,12 @@ h6 {
   font-weight: 300;
   letter-spacing: -.01rem;
   font-size: 32px;
+}
+
+.footer p{
+  font-weight: 100;
+  letter-spacing: -.01rem;
+  font-size: 1rem;
 }
 
 .footer p.footnoted{
@@ -1208,7 +1225,6 @@ section,
 }
 
 
-
 .arrow-phil{
   transition: transform 0.2s ease;
   transform: rotate(-35deg);
@@ -1271,7 +1287,7 @@ section,
 .projecttext {
   color: var(--dark-grey);
   letter-spacing: -.02rem;
-  margin-top: 10px;
+  /* margin-top: 7px; */
   font-family: Bricolage Grotesque, sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -1318,6 +1334,28 @@ section,
   display: flex;
 }
 
+.h4 {
+  color: var(--black);
+  text-align: left;
+  letter-spacing: -.08rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.h4._80-width {
+  letter-spacing: -.06rem;
+  max-width: 80%;
+  margin-top: 1rem;
+}
+
+.h4.fixedwidth {
+  width: 30%;
+}
+
 .h5 {
   color: var(--dark-grey);
   letter-spacing: -.5px;
@@ -1327,6 +1365,13 @@ section,
   font-size: 1rem;
   font-weight: 500;
   line-height: 110%;
+}
+
+@media screen and (max-width: 991px) {
+    .h5 {
+        font-size: .8rem;
+        font-weight: 400;
+    }
 }
 
 .h6 {
@@ -1342,13 +1387,29 @@ section,
 }
 
 .livesite-wrapper {
-  border-bottom: .5px solid #000;
+  border-bottom: .5px solid var(--black);
   justify-content: center;
   align-items: center;
   padding: 8px 2px 5px;
   text-decoration: none;
   display: flex;
   position: relative;
+}
+
+.livesite {
+  color: var(--white);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 100%;
+  text-decoration: none;
+}
+
+.livesite.black{
+  color: var(--black);
 }
 
 .grace{
@@ -1361,6 +1422,18 @@ section,
 .grace:hover {
   color: #565add;
   border-bottom-color: #565add;
+}
+
+.project-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+  border-bottom: 1px solid #000;
+}
+
+.project-link:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
 }
 
 .estus{
@@ -1380,8 +1453,21 @@ section,
   display: inline-block;
 }
 
+.project-label{
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 200;
+  line-height: 20%;
+  color: var(--light-grey);
+  padding: 0 0 15px 0;
+  text-align: left;
+  letter-spacing: -.02rem;
+  text-transform: uppercase;
+
+}
+
 .project-heading {
-  color: #000;
+  color: var(--black);
   text-align: left;
   letter-spacing: -.3rem;
   margin-top: 0;
@@ -1396,6 +1482,7 @@ section,
 .h3.turnh2 {
   font-size: 1.8rem;
   line-height: 104%;
+
   font-weight: 300;
   letter-spacing: -.06rem;
 }
@@ -1432,9 +1519,10 @@ iframe {
 }
 
 .margit{
-  font-size: 16px;
+  font-size: 20px;
   color: #a5a5a5;
   font-weight: 200;
+  margin: 20px 0;
 }
 
 /* Custom */
@@ -1512,7 +1600,7 @@ iframe {
       justify-content: flex-end;
       align-items: flex-start;
       height: 70vh;
-      padding-top: 4rem;
+      padding-top: 34rem;
       padding-bottom: 2rem;
   }
 }
@@ -1876,4 +1964,167 @@ hr {
     line-height: 120%;
 
   }
+}
+
+
+
+/*--------------------------------------------------------------
+# Media Large Screen
+--------------------------------------------------------------*/
+@media screen and (min-width: 1920px) {
+  .project-heading {
+    font-size: 6rem;
+  }
+
+  .livesite {
+    font-size: 1.5rem;
+  }
+
+  .h3.turnh2 {
+    font-size: 2.1rem;
+  }
+
+  .projecttext {
+    font-size: 18px;
+  }
+
+
+}
+
+/*--------------------------------------------------------------
+# Media Laptop Screen
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 991px) {
+  .project-sidebar-wrapper {
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    flex-flow: wrap;
+    grid-template-rows: auto;
+    grid-template-columns: .5fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: flex-start;
+    place-items: start;
+    width: 100%;
+    display: grid;
+  }
+
+  .livesite-wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .h3.turnh2 {
+    letter-spacing: -.08rem;
+    font-size: 2.2rem;
+    line-height: 110%;
+  }
+
+  .projecttext {
+    margin-top: 0;
+  }
+
+  .h4 {
+    font-size: 1.5rem;
+  }
+
+  .h4._80-width {
+    max-width: none;
+  }
+
+  .h4.fixedwidth {
+    width: 45%;
+  }
+
+
+}
+
+/*--------------------------------------------------------------
+# Media Tablet Screen
+--------------------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  .project-heading {
+    letter-spacing: -5px;
+    font-size: 3.5rem;
+  }
+
+  .project-sidebar-wrapper {
+    flex-flow: column;
+  }
+
+  .h3.turnh2 {
+    font-size: 2rem;
+  }
+
+  .h4, .h4.mobilesize {
+    font-size: 1.2rem;
+  }
+
+
+
+}
+
+/*--------------------------------------------------------------
+# Media Mobile Screen
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 479px) {
+  .project-heading {
+    letter-spacing: -4px;
+    font-size: 3rem;
+  }
+
+  .project-sidebar-wrapper {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    display: flex;
+  }
+
+  .livesite-wrapper {
+    position: relative;
+    inset: auto auto 0% 0%;
+  }
+
+  .livesite {
+    font-size: .8rem;
+  }
+
+  .h4 {
+    font-size: 1.4rem;
+  }
+
+  .h4.fixedwidth {
+    width: 100%;
+  }
+
+  .h4.mobilesize {
+    letter-spacing: -.04rem;
+    font-size: .9rem;
+  }
+
+  .footer h4{
+    /* line-height: 1.4em; */
+    font-weight: 200;
+    letter-spacing: -.01rem;
+    font-size: 1.6rem;
+  }
+
+  .footer p{
+    font-size: 0.8rem;
+  }
+
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+  color: var(--white);
+
+}
+
+.navmenu .active i,
+.navmenu .active:focus i {
+  color: var(--contrast-color);
+}
+
 }
