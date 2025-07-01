@@ -1,5 +1,6 @@
 
 /* Fonts */
+
 :root {
   --default-font: "Bricolage Grotesque",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Bricolage Grotesque",  sans-serif;
@@ -1067,7 +1068,9 @@ section,
   font-size: 46px;
 }
 
-
+.text-end {
+  width: 100%;
+}
 
 .clients h1{
   line-height: 1.4em;
@@ -1189,7 +1192,7 @@ section,
 
 .highlight-button{
   color: #565add;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 10px 0;
   font-weight: 300;
   border-bottom: .5px solid #565add;
@@ -1587,29 +1590,6 @@ iframe {
   display: flex;
 }
 
-@media screen and (max-width: 479px) {
-  .mastbanner-wrapper {
-      grid-column-gap: 1.2rem;
-      grid-row-gap: 1.2rem;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .mastbanner-wrapper {
-      justify-content: flex-end;
-      align-items: flex-start;
-      height: 70vh;
-      padding-top: 34rem;
-      padding-bottom: 2rem;
-  }
-}
-@media screen and (max-width: 991px) {
-  .mastbanner-wrapper {
-      margin-bottom: 0;
-  }
-}
-
 .masth4-wrapper._1 {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
@@ -1619,21 +1599,17 @@ iframe {
   display: flex;
 }
 
-@media screen and (max-width: 479px) {
-  .masth4-wrapper._1 {
-      grid-column-gap: 1.5rem;
-      grid-row-gap: 1.5rem;
-      justify-content: flex-start;
-      align-items: center;
-      width: 100%;
-      right: 0;
-  }
+.mastheading-wrapper {
+  flex-flow: wrap;
+  display: flex;
+  position: relative;
 }
+
 
 .h2 {
   color: var(--black);
   text-align: left;
-  letter-spacing: -.1rem;
+  letter-spacing: -.09rem;
   margin-top: 0;
   margin-bottom: 0;
   font-family: Bricolage Grotesque, sans-serif;
@@ -1642,36 +1618,20 @@ iframe {
   line-height: 100%;
 }
 
-@media screen and (max-width: 767px) {
-  .h2 {
-      font-size: 2.3rem;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .h2 {
-      font-size: 2rem;
-  }
-}
-
-
-
 .heading {
   color: var(--black);
   text-align: left;
-  letter-spacing: -.06rem;
+  letter-spacing: -.1vw;
   margin-top: 0;
   margin-bottom: 0;
   font-family: Bricolage Grotesque, sans-serif;
   font-size: 8vw;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 90%;
 }
 
-@media screen and (max-width: 479px) {
-  .heading {
-      font-size: 3.6rem;
-  }
+.heading.mobile {
+  display: none;
 }
 
 .masth4-wrapper._2 {
@@ -1737,6 +1697,8 @@ iframe {
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 120%;
+  /* display: inline-block;
+  margin-bottom: 0; */
 }
 
 .small-w{
@@ -1929,44 +1891,6 @@ hr {
 }
 
 
-@media screen and (max-width: 767px) {
-  table.table-gray, table.table-gray tbody, table.table-gray tr, table.table-gray td {
-    display: block;
-    width: 100%;
-  }
-
-  table.table-gray tr {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    /* border-bottom: 1px solid #e0e0e0; */
-  }
-
-  table.table-gray td {
-    /* padding: 0.3rem 0; */
-    /* font-size: 0.95rem; */
-  }
-
-  .small-w {
-    display: block;
-    font-size: 0.8rem;
-    color: #777;
-  }
-
-  .job-role-mobile{
-    color: var(--black);
-    text-align: left;
-    letter-spacing: -.08rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: Bricolage Grotesque, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 300;
-    line-height: 120%;
-
-  }
-}
-
-
 
 /*--------------------------------------------------------------
 # Media Large Screen
@@ -1986,6 +1910,18 @@ hr {
 
   .projecttext {
     font-size: 18px;
+  }
+
+  .mastbanner-wrapper {
+    padding-right: 3rem;
+  }
+
+  .mastbanner-wrapper {
+    padding-right: 3rem;
+  }
+
+  .heading {
+    font-size: 9rem;
   }
 
 
@@ -2038,6 +1974,45 @@ hr {
     width: 45%;
   }
 
+  .mastbanner-wrapper {
+    margin-bottom: 0;
+  }
+
+  .masth4-wrapper._1 {
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    width: 30rem;
+  }
+
+  .h2 {
+    font-size: 3rem;
+  }
+
+
+  .heading {
+    font-size: 3.5rem;
+  }
+
+  .heading.mobile {
+    font-size: 4.4rem;
+    display: flex;
+  }
+
+  .heading.hidemobile {
+    font-size: 3.7rem;
+    display: none;
+  }
+
+  .avatar{
+    width: 20%;
+  }
+
+  .mastheading-wrapper {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+
+
 
 }
 
@@ -2062,6 +2037,35 @@ hr {
     font-size: 1.2rem;
   }
 
+  .mastbanner-wrapper {
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 70vh;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.h2 {
+  font-size: 2.3rem;
+}
+
+
+.heading {
+  font-size: 4.4rem;
+}
+
+.heading.mobile {
+  font-size: 4rem;
+  display: flex;
+}
+
+.heading.hidemobile {
+  display: none;
+}
+
+.avatar{
+  width: 20%;
+}
 
 
 }
@@ -2126,5 +2130,96 @@ hr {
 .navmenu .active:focus i {
   color: var(--contrast-color);
 }
+
+.mastbanner-wrapper {
+  grid-column-gap: 1.2rem;
+  grid-row-gap: 1.2rem;
+  padding-top: 30rem;
+  padding-bottom: 2rem;
+}
+
+.masth4-wrapper._1 {
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  right: 0;
+}
+
+/* .avatar {
+  position: absolute;
+  inset: auto 0% auto auto;
+} */
+
+.avatar{
+  width: 20%;
+}
+
+.h2 {
+  font-size: 2rem;
+}
+
+.heading {
+  letter-spacing: -.3rem;
+  font-size: 4rem;
+  line-height: 95%;
+}
+
+.heading.mobile {
+  font-size: 3.6rem;
+}
+
+.mastheading-wrapper {
+  max-width: none;
+}
+
+hr{
+  border-top: 1px solid #313131;
+}
+
+
+table.table-gray, table.table-gray tbody, table.table-gray tr, table.table-gray td {
+  display: block;
+  width: 100%;
+}
+
+table.table-gray tr {
+  margin-bottom: 1.7rem;
+}
+
+table.table-gray td:not(:last-child) {
+  letter-spacing: -.04rem;
+  font-size: .9rem;
+}
+
+table.table-gray td:last-child {
+  font-size: 1.4rem; /* keep normal or slightly larger */
+}
+
+table.table-gray td {
+  padding: 0 0;
+  /* font-size: 0.95rem; */
+}
+
+.small-w {
+  display: block;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.job-role-mobile{
+  color: var(--black);
+  text-align: left;
+  letter-spacing: -.08rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 120%;
+
+}
+
 
 }
