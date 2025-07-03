@@ -1459,13 +1459,14 @@ section,
 .project-label{
   font-family: Bricolage Grotesque, sans-serif;
   font-size: 0.8rem;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 20%;
-  color: var(--light-grey);
+  color: #565add;
   padding: 0 0 15px 0;
   text-align: left;
-  letter-spacing: -.02rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(255, 204, 0, 0.2);
 
 }
 
@@ -1519,6 +1520,18 @@ iframe {
 
 .short-note{
   font-size: 10px;
+}
+
+hr.hr-dotted {
+  border: none;
+  height: 4px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #999,
+    #999 20px,
+    transparent 20px,
+    transparent 40px
+  );
 }
 
 .margit{
@@ -2134,7 +2147,7 @@ hr {
 .mastbanner-wrapper {
   grid-column-gap: 1.2rem;
   grid-row-gap: 1.2rem;
-  padding-top: 30rem;
+  padding-top: 35rem;
   padding-bottom: 2rem;
 }
 
@@ -2221,5 +2234,16 @@ table.table-gray td {
 
 }
 
+.flip-card-about-h,
+  .flip-card-about-h .flip-card-inner,
+  .flip-card-about-h .flip-card-front,
+  .flip-card-about-h .flip-card-back {
+    height: 360px !important;
+  }
+
+  .flip-card-front,
+.flip-card-back {
+  overflow: hidden;
+}
 
 }
